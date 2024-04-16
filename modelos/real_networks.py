@@ -29,6 +29,7 @@ if __name__ == '__main__':
     diretorio_s = str(sys.argv[2])
 
     edges = extract_edges_from_dataset(diretorio_e)
+    print(edges)
     graph = create_network(edges, diretorio_s)
 
     print(diretorio_e, len(graph.edges()), len(graph.nodes()))
